@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>LOGIN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+            .maindiv{
+                background-image: url('art.jpg');
+                width: 100vw;
+                height: 100vh;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .inputdiv{
+                background: #222f3e;
+                padding: 50px;
+                min-width: 400px;
+                width: 50%;
+                max-width: 600px;
+                opacity: 0.6;
+            }
+            .logintitle{
+                color: white;
+                text-align: center;
+                margin-bottom: 40px;
+                font-size: 2.5em;
+                font-weight: normal;
+            }
+            .inputgrp{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+            .inputgrp label{
+                color: white;
+                font-weight: lighter;
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+            .inputgrp input{
+                background: #c8d6e5;
+                border: 1px solid #c8d6e5;
+                padding: 3px;
+                opacity: 0.5;
+                border-radius: 5px;
+                color: white;
+                font-weight: lighter;
+                font-size: 1.5em;
+            }
+            .inputgrp input:focus{
+                border: 1px solid background;
+                background-color: #009999;
+            }
+            .loginbutton{
+                background-color: #222f3e;
+                padding: 10px 30px;
+                border-radius: 5px;
+                border: 1px solid #5f27cd;
+                width: 100%;
+                font-size: 1.3em;
+                font-weight: bold;
+                opacity: 0.9;
+                color: white;
+                cursor: pointer;
+            }
+            .loginbutton:hover{
+                background-color: #f368e0;
+                transition: 0.3s ease-in;
+                transform: scale(1.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="maindiv">
+            <div class="inputdiv">
+                <h3 class="logintitle">Welcome</h3>
+                <form>
+                    <div class="inputgrp">
+                        <label>Username:</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="inputgrp">
+                        <label>Password</label>
+                        <input type="password" name="pass">
+                    </div>
+                    <button type="submit" class="loginbutton">Sign in</button>
+                </form>
+            </div> 
+        </div>
+    </body>
+</html>
